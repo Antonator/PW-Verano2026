@@ -1,0 +1,233 @@
+/*estilo globales*/
+html{
+    font-size: 62.5%; /*mejor uso de rem para distintos tipos de pantallas*/
+    box-sizing: border-box; /*evita que aumente de tamaño los elementos al agregar pdding, margin y border*/
+}
+
+*, *:before, *:after {
+  box-sizing: inherit; /*hereda el box-sizing del html a todos los elementos del html*/
+}
+
+body{
+    font-size: 16px; /*1 rem = 10px*/
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #464646;
+    line-height: 1.5;
+}
+
+/*para encabezados*/
+h1,h2,h3{
+    margin: 0;
+}
+
+
+h1{
+    font-size: 3.8rem;
+    text-align: center;
+}
+
+h2{
+    font-size: 2.8rem;
+}
+
+h3{
+    font-size: 2.4rem;
+}
+
+.sep-enlace{
+    color: #fff;
+}
+
+p{
+    font-size: 1.8rem;
+    text-align: justify;
+    margin: 0;
+}
+
+a{
+    font-weight: bold;
+    text-decoration: none;
+}
+
+header{
+    background: #544ef8;
+    color: #fff;
+}
+
+.msg-inicio{
+    text-align: center;
+    font-size: 2.4rem;
+}
+
+.navegacion{
+    background: #544ef8;
+    padding: 1.5rem;
+}
+.navegacion a{
+    color: #fff;
+    transition: all 0.3s;
+    padding: 1rem;
+}
+
+.navegacion a:hover{
+    color: #FFC107;
+    text-transform: uppercase;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: center;
+    gap: 1rem
+}
+
+.contenedor-img img{
+    height: 40rem;
+    width: 100%;
+}
+
+.estilo-lista{
+    background-color: #544ef8;
+    color: #fff;
+    padding: 1rem;
+    list-style: none;
+    text-transform: uppercase;
+    border-radius: 1rem;
+    box-shadow: 1px 1px 3px #434343;
+}
+
+.estilo-lista li{
+    border-bottom: 1px solid ;
+    padding: 0.5rem;
+    font-weight: bold;
+    
+}
+
+#promociones, .texto-promociones{
+    text-align: center;
+}
+
+.texto-promociones{
+    text-transform: uppercase;
+}
+
+.texto-promociones strong{
+    color: #544ef8;
+}
+
+.texto-promociones i{
+    color: #544ef8;
+}
+
+.estilo-tabla{
+    background: #544ef8;
+    color: #fff;
+    border-collapse: collapse;
+    border-radius: 1rem;
+    margin: 1rem 0;
+    width: 100%;
+}
+
+.estilo-tabla td,th{
+    padding: 1rem;
+    border: 1px solid #fff;
+    
+}
+
+.estilo-tabla th{
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+.encabezado-viajar-con-nosotros{
+    text-align: center;
+}
+
+form{
+    display: flex;
+    justify-content: center;
+    
+}
+
+form fieldset legend{
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    font-size: 2rem;
+}
+
+form fieldset{
+    border-radius: 1rem;
+    border: 1px solid #434343;
+    
+}
+
+input{
+    padding: 0.7rem 0.5rem;
+    border: none;
+    border-radius: 0.3rem;
+}
+
+input:focus{
+    border: 2px solid #FFC107;
+}
+
+.campo-texto{
+    width: 100%;
+}
+
+
+.input-btn{
+    padding: 1.5rem 3rem;
+    cursor: pointer;
+    background-color: #FFC107;
+    border: none;
+    border-radius: 0.4rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    transition: all 0.3s;
+}
+
+.input-btn:hover{
+    scale: 1.05;
+    background-color: #f1b706;
+}
+
+textarea{
+    width: 100%;
+}
+
+select{
+    width: 100%;
+    background-color: #fff;
+    border: none;
+    padding: 1rem;
+}
+
+form table th{
+    text-transform: uppercase;
+}
+
+footer{
+    background: #544ef8;
+    color: #fff;
+    padding: 2rem;
+}
+
+footer a{
+    color: #fff;
+}
+
+.contenedor-info{
+    text-align: center;
+    border-right: 2px solid #fff;
+}
+
+.contenedor-info:last-of-type{
+    border: none;
+}
+
+.contenedor-info p{
+    text-align: center;
+}

@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+    <meta charset="UTF-8">
+    <title>Travel World - Agencia de Viajes</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header>
+        <h1>Travel World</h1>
+        <p class="msg-inicio"><strong>La mejor agencia de viajes</strong> para conocer los destinos más increíbles de México y el mundo.</p>
+        <hr>
+    </header>
+    
+    <h2>Menú</h2>
+    <nav class="navegacion">
+        <a href="ejercicio3.html">Inicio</a> <strong class="sep-enlace">|</strong>
+        <a href="#destinos">Destinos</a> <strong class="sep-enlace">|</strong>
+        <a href="#promociones">Promociones</a> <strong class="sep-enlace">|</strong>
+        <a href="#paquetes">Paquetes</a> <strong class="sep-enlace">|</strong>
+        <a href="#contacto">Contacto</a> 
+    </nav>
+    
+    <hr>
+    <h2>Bienvenido</h2>
+    <div class="contenedor grid">
+         <div class="contenedor-img">
+             <img src="viaje_img.jpeg">
+        </div>
+        <div class="contenedor-texto-bienvenida">
+            <p>En <strong>Travel World</strong> ofrecemos paquetes turísticos para toda la familia.
+             Nuestro objetivo es brindar las mejores experiencias de viaje con <i>excelente servicio y precios accesibles.</i>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem nobis harum at explicabo eos earum quidem accusamus. 
+            Enim in sapiente voluptatibus nesciunt accusamus excepturi distinctio repudiandae ipsum, similique totam eius.
+            </p> 
+            <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem nobis harum at explicabo eos earum quidem accusamus. 
+            Enim in sapiente voluptatibus nesciunt accusamus excepturi distinctio repudiandae ipsum, similique totam eius.
+            </p>
+        </div>
+    </div>
+
+    <hr>
+    <h2 id="destinos">Destinos Populares</h2>
+    <div class="grid">
+        <div class="contenedor-lista">
+            <h3>Playas</h3>
+            <ul class="estilo-lista">
+                <li>Cancún</li>
+                <li>Puerto Vallarta</li>
+                <li>Los Cabos</li>
+                <li>Riviera Maya</li>
+            </ul>   
+        </div>
+        <div class="contenedor-lista">
+            <h3>Pueblos Mágicos</h3>
+            <ol class="estilo-lista">
+                <li>Tequila</li>
+                <li>Mazamitla</li>
+                <li>Real de Catorce</li>
+                <li>Taxco</li>
+            </ol>
+        </div>
+    </div>
+    
+    
+    <hr>
+    <h2 id="promociones">Promociones</h2>
+    <p class="texto-promociones">Reserva durante este mes y obtén un <strong>20% de descuento en paquetes seleccionados.</strong></p>
+    <p class="texto-promociones">Los primeros 50 clientes recibirán un <i>tour gratuito</i> en su destino.</p>
+    <hr>
+    <h2 id="paquetes">Paquetes Disponibles</h2>
+    <table class="estilo-tabla">
+        <tr>
+            <th>Destino</th>
+            <th>Días</th>
+            <th>Hotel</th>
+            <th>Precio</th>
+        </tr>
+        <tr>
+            <td>Cancún</td>
+            <td>5</td>
+            <td>5 estrellas</td>
+            <td>$12,500</td>
+        </tr>
+        <tr>
+            <td>Puerto Vallarta</td>
+            <td>4</td>
+            <td>4 estrellas</td>
+            <td>$9,800</td>
+        </tr>
+        <tr>
+            <td>Los Cabos</td>
+            <td>6</td>
+            <td>5 estrellas</td>
+            <td>$15,300</td>
+        </tr>
+        <tr>
+            <td>Mazamitla</td>
+            <td>3</td>
+            <td>Cabaña</td>
+            <td>$5,900</td>
+        </tr>
+        <tr>
+            <td>Riviera Maya</td>
+            <td>7</td>
+            <td>Todo incluido</td>
+            <td>$18,900</td>
+        </tr>
+    </table>
+    <hr>
+    <h2 class="encabezado-viajar-con-nosotros">¿Por qué viajar con nosotros?</h2>
+    <ul class="estilo-lista">
+        <li>Hoteles certificados.</li>
+        <li>Guías turísticos.</li>
+        <li>Seguro de viajero.</li>
+        <li>Atención 24/7.</li>
+        <li>Facilidades de pago.</li>
+    </ul>
+    <hr>
+    <h2>Formulario de Reservación</h2>
+    <form>
+        <fieldset>
+            <legend>Solicitud de Reservación</legend>
+            <table class="estilo-tabla" border="1">
+                <tr>
+                    <th colspan="4">Datos del cliente</th>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Nombre</label>
+                    </td>
+                    <td>
+                        <input class="campo-texto" type="text">
+                    </td>
+                    <td>
+                        <label>Correo</label>
+                    </td>
+                    <td>
+                        <input class="campo-texto" type="email">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Contraseña</label>
+                    </td>
+                    <td>
+                        <input class="campo-texto" type="password">
+                    </td>
+                    <td>
+                        <label>Edad</label>
+                    </td>
+                    <td>
+                        <input class="campo-texto" type="number">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Fecha de viaje</label>
+                    </td>
+                    <td>
+                        <input class="campo-texto" type="date">
+                    </td>
+                    <td>
+                        <label>Hora de salida</label>
+                    </td>
+                    <td>
+                        <input class="campo-texto" type="time">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Número de viajeros</label>
+                    </td>
+                    <td>
+                        <input class="campo-texto" type="number">
+                    </td>
+                    <td>
+                        <label>Presupuesto</label>
+                    </td>
+                    <td><input class="campo-texto" type="range"></td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Color de pulsera</label>
+                    </td>
+                    <td>
+                        <input class="campo-texto" type="color">
+                    </td>
+                    <td>
+                        <label>Identificación</label>
+                    </td>
+                    <td>
+                        <input class="campo-archivo" type="file">
+                    </td>
+                </tr>
+                <tr>
+                    <th colspan="4">Servicios</th>
+                </tr>
+                <tr>
+                    <td colspan="4">
+                        <input  type="checkbox">
+                        <label>Transporte</label>
+                        <br>
+                         <input type="checkbox">
+                        <label>Hotel</label>
+                        <br>
+                         <input type="checkbox">
+                        <label>Desayuno</label>
+                        <br>
+                         <input type="checkbox">
+                        <label>Seguro de viaje</label>
+                    </td>
+                </tr>
+                <tr>
+                    <th colspan="4">Tipo de Habitación</th>
+                </tr>
+                <tr>
+                    <td colspan="4">
+                        <input type="radio">
+                        <label>Individual</label>
+                        <input type="radio">
+                        <label>Doble</label>
+                        <input type="radio">
+                        <label>Familiar</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Destino</label>
+                    </td>
+                    <td>
+                        <select>
+                            <option>Cancún</option>
+                            <option>Puerto Vallarta</option>
+                            <option>Los Cabos</option>
+                            <option>Riviera Maya</option>
+                        </select>
+                    </td>
+                    <td>
+                        <label>Forma de pago</label>
+                    </td>
+                    <td>
+                        <select>
+                            <option>Tarjeta</option>
+                            <option>Efectivo</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Comentarios</label>
+                    </td>
+                    <td colspan="4">
+                        <textarea cols="70" rows="5"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <th colspan="2">
+                        <input class="input-btn" type="submit" value="Reservar">
+                    </th>
+                    <th colspan="2">
+                        <input class="input-btn" type="submit" value="Limpiar">
+                    </th>
+                </tr>
+            </table>
+        </fieldset>
+    </form>
+    <hr>
+    <footer>
+        <div class="contenedor grid">
+            <div class="contenedor-info">
+                <h2 id="contacto">Información de Contacto</h2>
+                <p>Dirección: Av. Principal #100, Tepic, Nayarit.</p>
+                <p>Teléfono: (311) 123-4567</p>
+                <p>Correo: contacto@travelworld.com</p>
+                
+            </div>
+            <div class="contenedor-info">
+                <h3>Enlaces de interés</h3>
+                <a href="">Buscar más destinos</a>
+                <br>
+                <a href="ejercicio3.html">Volver al inicio</a>
+                <br>
+                <a href="#paquetes">Ver paquetes</a>
+            </div>
+        </div>
+    </footer>
+    
+    
+</body>
+</html>
