@@ -57,6 +57,7 @@ header{
 .msg-inicio{
     text-align: center;
     font-size: 2.4rem;
+    color: #FFC107;
 }
 
 .navegacion{
@@ -137,6 +138,7 @@ header{
 .estilo-tabla th{
     font-size: 2rem;
     text-transform: uppercase;
+    color: #FFC107;
 }
 
 .encabezado-viajar-con-nosotros{
@@ -207,6 +209,7 @@ select{
 
 form table th{
     text-transform: uppercase;
+    color: #FFC107;
 }
 
 footer{
