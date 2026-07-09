@@ -1,0 +1,139 @@
+/*estilo globales*/
+html{
+    font-size: 62.5%; /*mejor uso de rem para distintos tipos de pantallas*/
+    box-sizing: border-box; /*evita que aumente de tamaño los elementos al agregar pdding, margin y border*/
+}
+
+*, *:before, *:after {
+  box-sizing: inherit; /*hereda el box-sizing del html a todos los elementos del html*/
+}
+
+body{
+    font-size: 16px; /*1 rem = 10px*/
+    font-family: Helvetica, Arial, sans-serif;
+    background-color: #f1f1f1;
+}
+
+p{
+    color: #525151;
+    text-align: center;
+}
+
+h1{
+    margin: 0;
+}
+
+.contenedor{
+    display: grid;
+    grid-template-columns: 100%;
+    align-items: center;
+    justify-content: center;
+    place-items: center;
+    padding: 10rem;
+    gap: 1rem;
+    width: 100%;
+    
+}
+
+@media (min-width: 768px) {
+    .contenedor{
+        grid-template-columns: repeat(2,1fr);
+        padding: 20rem;
+        
+    }
+}
+
+.encabezado-principal{
+    color: #1877f2;
+    font-size: 6rem;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .encabezado-principal,p{
+        text-align: left;
+    }
+}
+
+.descripcion-pagina{
+    font-size: 2.8rem;
+}
+
+.contenido-formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+fieldset{
+    border: none;
+    background-color: #fff;
+    border-radius: 1rem;
+    padding: 2rem;
+    box-shadow: 1px 2px 3px #b1b0b0;
+}
+
+.contenedor-form{
+    border: none;
+}
+
+.campo{
+    width: 100%;
+    padding: 1.5rem;
+    border: 1px solid #aeaeae;
+    border-radius: 0.5rem;
+    font-size: 1.9rem;
+}
+
+.boton-sesion{
+    background-color: #0866ff;
+    color: #fff;
+    padding: 1.5rem;
+    border: none;
+    border-radius: 0.5rem;
+    width: 100%;
+    font-weight: bold;   
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.boton-sesion:hover{
+    background-color: #0760ef;
+}
+
+.enlace{
+    text-decoration: none;
+    font-size: 1.4rem;
+}
+
+.enlace:hover{
+    text-decoration: underline;
+}
+
+.linea{
+    margin: 1rem 0rem;
+    border: 0.4px solid #dcdada;
+    width: 100%;
+}
+
+.boton-crear-cuenta{
+    background-color: #42b72a;
+    border: none;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.7rem;
+    cursor: pointer;
+}
+
+.boton-crear-cuenta:hover{
+    background-color: #3aa525;
+}
+
+.msj-crea-cuenta{
+    font-size: 1.6rem;
+    text-align: center;
+}
