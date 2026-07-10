@@ -1,0 +1,223 @@
+/*estilo globales*/
+html{
+    font-size: 62.5%; /*mejor uso de rem para distintos tipos de pantallas*/
+    box-sizing: border-box; /*evita que aumente de tamaño los elementos al agregar pdding, margin y border*/
+}
+
+*, *:before, *:after {
+  box-sizing: inherit; /*hereda el box-sizing del html a todos los elementos del html*/
+}
+
+body{
+    font-size: 16px; /*1 rem = 10px*/
+    font-family: "Segoe UI", Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+.contenedor{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    flex: 1;
+}
+
+.contenedor-login{
+    margin: 0rem 2rem;
+}
+
+.logo img{
+    width: 100%;
+}
+
+@media (min-width: 769px){
+    .contenedor{
+        grid-template-columns: repeat(2,1fr);
+    }
+    
+}
+
+.unete{
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+
+.contenedor-enlaces-registro{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+}
+
+@media (min-width: 769px){
+    .contenedor-enlaces-registro{
+        align-items: unset;
+    }
+}
+
+.enlace{
+    margin-bottom: 2rem;
+}
+
+.enlace-registro{
+    background: #fff;
+    padding: 1.3rem;
+    border-radius: 3rem;
+    text-decoration: none;
+    color: #000;
+    display: block;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    transition: all 0.3s;
+}
+
+.enlace-registro:hover{
+    background-color: #d9d8d8;
+}
+
+@media (max-width: 768px){
+    .enlace-registro,p,h1{
+        width: 100%;
+        text-align: center;
+    }
+}
+
+.logo-apple{
+    width: 2rem;
+}
+
+.enlace-crear-cuenta{
+    background-color: rgb(47, 158, 222);
+    color: #fff;
+    padding: 1.4rem;
+    border-radius: 3rem;
+    display: block;
+    width: 60%;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.enlace-crear-cuenta:hover{
+    background-color: rgb(38, 133, 189);
+}
+
+@media (max-width: 768px){
+    .enlace-crear-cuenta{
+        width: 100%;
+    }
+}
+
+
+.msj-registro{
+    color: #b4b4b4;
+    margin-bottom: 1rem;
+    width: 60%;
+}
+
+.enlace-terminos{
+    color: rgb(47, 158, 222);
+    text-decoration: none;
+}
+
+.enlace-terminos:hover{
+    text-decoration: underline;
+}
+
+.linea{
+    border: 0.5px solid #999898;
+    margin-bottom: 1.5rem;
+    width: 100%;
+}
+
+.contenedor-separacion{
+    display: flex;
+    align-items: center;
+    width: 60%;
+
+}
+
+@media (max-width: 768px){
+    .msj-registro, .contenedor-separacion, .linea{
+        width: 100%;
+    }
+
+}
+
+.contenedor-enlace-iniciar-sesion{
+    display: flex;
+}
+
+.contenedor-inicio-sesion{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    
+}
+
+
+.msj-iniciar-sesion{
+    font-weight: bold;
+    margin: 0 0 1.5rem 0;
+}
+
+.enlace-iniciar-sesion{
+    background-color: transparent;
+    border: 1px solid #fff;
+    border-radius: 3rem;
+    display: block;
+    text-align: center;
+    width: 60%;
+    padding: 1.3rem;
+    text-decoration: none;
+    color: rgb(47, 158, 222);
+    font-weight: bold;
+    transition: all 0.3s;
+}
+
+.enlace-iniciar-sesion:hover{
+    color: #fff;
+    border: 1px solid rgb(47, 158, 222);
+}
+
+@media (max-width: 769px){
+    .enlace-iniciar-sesion{
+        width: 100%;
+    }
+
+}
+
+.centrar-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+}
+
+.navegacion-footer{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.navegacion-footer a,span{
+    color: #b4b4b4;
+    text-decoration: none;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.navegacion-footer a:hover{
+    text-decoration: underline;
+}
