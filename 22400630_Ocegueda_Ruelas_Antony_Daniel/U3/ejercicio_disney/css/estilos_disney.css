@@ -1,0 +1,295 @@
+/*CODIGO DE OCEGUEDA RUELAS ANTONY DANIEL*/
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+*, 
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body{
+    font-size: 16px; /*1 rem = 10px*/
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    background-color: #000;
+}
+
+.contenedor {
+    width: 90%;
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+.header{
+    background-image: url(../img/assets/main-hero-background.png);
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 5rem;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+.barra{
+    margin-top: 1.5rem;
+    margin-bottom: 5rem;
+}
+
+.contenedor-logo img{
+    width: 10rem;
+}
+
+.iniciar-sesion-btn{
+    border: 1.5px solid #fff;
+    padding: 0.5rem 1.3rem;
+    border-radius: 0.5rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.iniciar-sesion-btn:hover{
+    background-color: #fff;
+    color: #434343;
+}
+
+.contenedor-barra{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.formulario-suscripcion{
+    display: flex;
+}
+
+@media (max-width: 768px){
+    .formulario-suscripcion{
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
+
+.input-email{
+    background-color: #222222;
+    border: none;
+    padding: 1rem;
+    color: #fff;
+    width: 40%;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    font-weight: bold;
+}
+
+.suscribir-btn{
+    background-color: rgb(48, 206, 234);
+    border: none;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+@media (max-width: 768px){
+    .suscribir-btn, .input-email{
+        width: 100%;
+        border-radius: 1rem;
+    }
+
+    .suscribir-btn{
+        padding: 1rem;
+    }
+}
+
+.suscribir-btn:hover{
+    background-color: rgb(40, 173, 196);
+}
+
+.enlace{
+    color: #fff;
+}
+
+.iconos-seccion1{
+    width: 50%;
+}
+
+@media (max-width: 768px){
+    .iconos-seccion1{
+        width: 100%;
+    }
+}
+
+/*estilos seccion 2*/
+.seccion2{
+    padding-bottom: 5rem;
+}
+
+.contenedor-imagen-seccion2{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.texto-imagen-seccion2{
+    position: absolute;
+    font-size: 4rem;
+    font-weight: bold;
+    margin: 2rem;
+}
+
+.imagen-seccion2{
+    width: 100%;
+    height: auto;
+}
+
+/*estilos seccion 3*/
+.contenido-seccion3{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+@media (max-width: 768px){
+    .contenido-seccion3{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.card-seccion3 p{
+    text-align: center;
+}
+
+.img-seccion3{
+    width: 100%;
+    transition: all 0.3s;
+}
+
+.img-seccion3:hover{
+    scale: 1.05;
+}
+
+/*estilos seccion 4*/
+.seccion4{
+    background-color: #06031f;
+    padding-top: 1rem;
+}
+
+.menos{
+    color: red;
+}
+
+.tabla-seccion4{
+    border: 1px solid #434343;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+@media (max-width: 500px){
+    .tabla-seccion4{
+        font-size: 1rem;
+    }
+}
+
+.td-der{
+    background-color: #101010;
+}
+
+.tabla-seccion4 th,td{
+    padding: 2rem;
+    text-align: center;
+    
+}
+
+@media (max-width: 500px){
+    .tabla-seccion4 th,td{
+        padding: 1rem 0.5rem;
+    }
+}
+
+.encabezados-tabla-azul{
+    background-color: rgb(0, 183, 255);
+    border-radius: 1rem;
+    text-transform: uppercase;
+}
+
+.encabezados-tabla{
+    background-color: #222222;
+    text-transform: uppercase;
+}
+
+.precio-tabla{
+    font-weight: bold;
+    padding: 1rem;
+}
+ /*Estilos seccion 5*/
+.seccion5{
+    padding-top: 5rem;
+    background-color: #06031f;
+}
+
+.imagenes-seccion5{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+@media (max-width: 768px){
+    .imagenes-seccion5{
+        flex-direction: column;
+    }
+}
+
+.imagen-seccion5 img{
+
+    width: 100%;
+    border-radius: 1rem;
+    transition: all 0.3s;
+}
+
+.imagen-seccion5 img:hover{
+    scale: 1.1;
+}
+
+
+/*estilos seccion 6*/
+.seccion6{
+    padding-top: 5rem;
+    background-color: #03020e;
+}
+
+.texto-seccion6{
+    text-align: center;
+}
+
+.texto-seccion6 h2{
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+.texto-seccion6 p{
+    font-size: 1.8rem;
+}
+
+.img-seccion6{
+    width: 100%;
+}
+
+/*seccion 7*/
+.seccion7{
+    background-color: #03020e;
+    padding-top: 1rem;
+}
+
+.contenido-seccion7{
+    text-align: center;
+}
+
+.contenido-seccion7 p{
+    color: #b2b2b2;
+}
