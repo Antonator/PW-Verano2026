@@ -1,0 +1,1 @@
+Los resultados se muestran en la consola del navegador, todos los ejercicios resueltos están en el archivo ejercicios.js y se mandan llamar en el archivo ejercicios.html
