@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: rgb(243, 239, 239);
+    color: #333;
+}
+
+h1{
+    text-align: center;
+    color: #434343;
+    margin: 30px;
+    border-bottom: 1px solid #c4c4c4;
+}
+
+form{
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,.1);
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+@media (max-width: 768px){
+    form{
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+    }
+}
+
+input{
+    padding: 10px;
+    width: 200px;
+    flex: 1;
+    border: 1px solid #e2e1e1;
+    border-radius: 10px;
+}
+
+@media (max-width: 768px){
+    input{
+        width: 90%;
+    }
+}
+
+button{
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    background-color: #434343;
+    color: #fff;
+    border-radius: 10px;
+    width: 80px;
+    transition: all 0.3s;
+    font-weight: bold;
+
+}
+
+@media (max-width: 768px){
+    button{
+        width: 90%;
+    }
+}
+
+button:hover{
+    background-color: #4c4c4c;
+}
+
+table{
+    width: 80%;
+    margin: 50px auto;
+    border-collapse: collapse;
+    background-color: #434343;
+    color: #fff;
+    border-radius: 10px;
+}
+
+@media (max-width: 768px){
+    table{
+        width: 90%;
+    }
+}
+
+th{
+    text-transform: uppercase;
+}
+
+th,td{
+    padding: 10px;
+    border-bottom: 1px solid #fff;
+    text-align: center;
+}
+
+td{
+    background-color: #5a5a5a;
+}
+
+.acciones button{
+    margin-bottom: 0;
+    background-color: #fff;
+    color: #434343;
+}
+
+.acciones button:hover{
+    background-color: #e1e0e0;
+}
+
+@media (max-width: 768px){
+    .acciones button{
+        margin-bottom: 0.5rem;
+    }
+}
